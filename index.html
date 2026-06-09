@@ -123,7 +123,7 @@
     width: 200px;
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    margin: 14px auto 28px;
+    margin: 10px auto 8px;
   }
 
   /* ─── BUTTONS ─── */
@@ -464,24 +464,43 @@
   .finish-trophy { font-size: 3rem; margin-bottom: 12px; }
   .finish-ig {
     display: inline-block;
-    margin-top: 22px;
+    margin-top: 10px;
     padding: 12px 30px;
     border-radius: 50px;
-    background: linear-gradient(135deg, #833ab4, #fd1d1d, #f56040, #fcb045);
+    background: #0055ff;
     color: #fff;
     font-family: 'Orbitron', sans-serif;
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-decoration: none;
-    box-shadow: 0 4px 20px rgba(253,29,29,0.35);
+    box-shadow: 0 4px 20px rgba(73, 84, 206, 0.651);
     transition: all 0.25s;
   }
   .finish-ig:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(253,29,29,0.55);
+    box-shadow: 0 8px 30px rgba(29, 38, 129, 0.651);
   }
-
+  .finish-pmb {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 8;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background: #ff7700;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(255, 98, 0, 0.928);
+    transition: all 0.25s;
+  }
+  .finish-pmb:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(214, 121, 63, 0.928);
+  }
   /* ─── FLOATING PARTICLES ─── */
   .particles {
     position: fixed;
@@ -642,14 +661,17 @@
     <div class="divider"></div>
     <p style="color:var(--gray); font-size:1rem; line-height:1.7; margin-bottom:16px;">
       Kamu telah menyelesaikan Challenge dari <br>
-      <strong style="color:var(--blue-glow);">Himpunan Mahasiswa Jurusan Informatics!</strong>
+      <strong style="color:var(--blue-glow);">Himpunan Mahasiswa Jurusan Informatika</strong>
     </p>
     <div class="result-stat">
-      <div class="label">🧠 Skor Kuis Akhir</div>
+      <div class="label">Skor Kuis Akhir Anda</div>
       <div class="value" id="final-quiz-score">—</div>
     </div>
     <div class="divider"></div>
-    <p style="font-size:0.85rem; color:var(--gray); margin-bottom:8px;">Ikuti update & kegiatan HMJ IT kami:</p>
+     <a href="https://pmb.itbwigalumajang.ac.id/" target="_blank" class="finish-pmb">
+      link pmb wiga? klik disini
+    </a>
+    <p style="font-size:0.85rem; color:var(--gray); margin-bottom:3px; margin-top: 14px;">Ikuti update & kegiatan HMJ IT kami:</p>
     <a href="https://www.instagram.com/hmjinformatikawiga" target="_blank" class="finish-ig">
       klik disini untuk melihat keajaiban
     </a>
@@ -702,7 +724,7 @@ const QUIZ = [
   {
     q: "Ada berapa Program Studi di ITB WIGA LUMAJANG?",
     opts: ["1","2","3","4"],
-    ans: 2
+    ans: 3
   },
   {
     q: "Salah satu program studi di ITB Widya Gama Lumajang adalah?",
